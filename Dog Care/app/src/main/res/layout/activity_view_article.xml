@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".UserProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:padding="20dp"
+        android:layout_above="@id/footer">
+
+        <LinearLayout
+            android:id="@+id/articleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/footerWelcomeBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Facebook"
+                android:focusable="true"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/footerFoodBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Twitter"
+                android:focusable="true"
+                android:src="@drawable/dog_food" />
+
+            <ImageView
+                android:id="@+id/footerCartBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Instagram"
+                android:focusable="true"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/footerProfileBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="true"
+                android:contentDescription="LinkedIn"
+                android:focusable="true"
+                android:src="@drawable/profile" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

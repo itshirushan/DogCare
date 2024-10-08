@@ -1,0 +1,136 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".UserProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:padding="20dp"
+        android:layout_above="@id/footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_background"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/write"
+                    android:scaleType="fitCenter" />
+
+                <Button
+                    android:id="@+id/AddArticle"
+                    android:backgroundTint="@color/lavender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ADD ARTICLE"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_background"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/view"
+                    android:scaleType="fitCenter" />
+
+                <Button
+                    android:id="@+id/viewArticle"
+                    android:backgroundTint="@color/lavender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="VIEW ARTICLE"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/footerWelcomeBtn"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/footerFoodBtn"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/dog_food" />
+
+            <ImageView
+                android:id="@+id/footerCartBtn"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/profile" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

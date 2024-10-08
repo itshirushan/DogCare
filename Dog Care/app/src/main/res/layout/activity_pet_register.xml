@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back1"
+    tools:context=".pet_register"
+    android:gravity="center"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/label_profile"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Register Dog"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:id="@+id/registerdogss"
+        android:layout_height="495dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_background"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Upload Image Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/uploadImageButton"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:contentDescription="Upload Image"
+                android:src="@drawable/dogprofile" />
+
+            <Button
+                android:id="@+id/selectImageButton"
+                android:backgroundTint="@color/lavender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Select Image" />
+        </LinearLayout>
+
+        <!-- Pet Name Input -->
+        <EditText
+            android:id="@+id/petNameInput"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Pet Name"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <!-- Age Input -->
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Age"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Color Input -->
+        <EditText
+            android:id="@+id/colorInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Color"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Sex Input -->
+        <EditText
+            android:id="@+id/sexInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Sex"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Breed Input -->
+        <EditText
+            android:id="@+id/breedInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Breed"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/signupButton"
+            android:backgroundTint="@color/lavender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:text="Register" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/registerdogss"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="-10dp"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/footerWelcomeBtn"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Facebook"
+                android:focusable="true"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/footerFoodBtn"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Twitter"
+                android:focusable="true"
+                android:src="@drawable/dog_food" />
+
+            <ImageView
+                android:id="@+id/footerCartBtn"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Instagram"
+                android:focusable="true"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/footerProfileBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="true"
+                android:contentDescription="LinkedIn"
+                android:focusable="true"
+                android:src="@drawable/profile" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

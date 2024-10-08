@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    tools:context=".UserProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:padding="20dp"
+        android:layout_above="@id/footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <LinearLayout
+                android:id="@+id/article_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/article_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="What, How Much To Feed My Dog"
+                        android:textSize="20dp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/article_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="This article covers essential information about feeding your dog, including portion sizes, nutrient requirements, and tips for different life stages. It emphasizes the importance of a balanced diet for maintaining your dog's health and energy levels."
+                        android:textSize="15dp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/article_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="https://www.akc.org/expert-advice/nutrition/"
+                        android:textSize="15sp"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/footerWelcomeBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Facebook"
+                android:focusable="true"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/footerFoodBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Twitter"
+                android:focusable="true"
+                android:src="@drawable/dog_food" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Instagram"
+                android:focusable="true"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:contentDescription="LinkedIn"
+                android:focusable="true"
+                android:src="@drawable/profile" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="uploadImageButton" type="id" />
+    <item name="petNameInput" type="id" />
+    <item name="ageInput" type="id" />
+    <item name="colorInput" type="id" />
+    <item name="sexInput" type="id" />
+    <item name="breedInput" type="id" />
+    <item name="signupButton" type="id" />
+    <item name="signup_confirm" type="id" />
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".pet_register"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/addaricle"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="ADD ARTICLE"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addaricle"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:padding="40dp">
+
+        <!-- Title Input -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/linkInput"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/lavender_border"
+            android:backgroundTint="@color/lavender"
+            android:text="Submit" />
+
+        <EditText
+            android:id="@+id/titleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lavender_border"
+            android:hint="Title"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="text"
+            android:padding="10dp"/>
+
+        <!-- Description Input -->
+        <EditText
+            android:id="@+id/descriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleInput"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Description"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:padding="10dp"/>
+
+        <!-- Link Input -->
+        <EditText
+            android:id="@+id/linkInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionInput"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Link"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:inputType="textUri"
+            android:padding="10dp"/>
+
+        <!-- Register Button -->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/footerWelcomeBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:contentDescription="Facebook"
+                android:focusable="true"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/footerFoodBtn"
+                android:layout_width="47dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Twitter"
+                android:focusable="true"
+                android:src="@drawable/dog_food" />
+
+            <ImageView
+                android:id="@+id/footerCartBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="70dp"
+                android:clickable="true"
+                android:contentDescription="Instagram"
+                android:focusable="true"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/footerProfileBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="true"
+                android:contentDescription="LinkedIn"
+                android:focusable="true"
+                android:src="@drawable/profile" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
